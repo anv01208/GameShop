@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles_for_game.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:black">
+<a href="mainPage.html"><button id="home-button">Home</button></a>
+
+<div class="container" align="center">
+  <h2 style="color:red">DONT CLICK!!!</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">Dont press</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content" style="background-color:black;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="color:red">Are you sure?</h4>
+        </div>
+        <div class="modal-body">
+          <p style="color:red">SURE???</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="secret()">Forward</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<h3 style="color:red" id="123"></h3>
+
+<script>
+  function secret() {
+    let h3 = document.getElementById('123')
+    let img = document.createElement('img');
+    img.style.align = 'center';
+    img.src = 'https://i.pinimg.com/originals/3c/08/a5/3c08a57c74e452814f623835288b7ab4.jpg';
+    img.width = "350";
+    img.height = "150";
+    h3.innerHTML = "Your have received 50% discount!"
+    document.body.appendChild(img);
+    document.body.appendChild(h3);
+
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+h1 {
+    font-size: 50px;
+    color: #E7BF70;
+}
+
+body {
+    background-color: #2B2B2B;
+}
+
+#field td {
+
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 50px;
+    color: #E7BF70;
+
+}
+
+#start-button {
+    background-color: #2B2B2B;
+    font-size: 20px;
+    color: #E7BF70;
+    border: 2px solid #4F5151;
+    border-radius: 5%;
+    width: 200px;
+    height: 50px;
+}
+
+#start-button:active {
+    background-color: #E7BF70;
+    color: #2B2B2B;
+}
+#score td {
+    width:105px;
+    height:40px;
+    border:1px solid black;
+    color: #E7BF70;
+}
+#home-button {
+    background-color: #2B2B2B;
+    font-size: 20px;
+    color: #E7BF70;
+    border: 2px solid #4F5151;
+    border-radius: 5%;
+    width: 100px;
+    height: 28px;
+    }
+#home-button:active {
+    background-color: #E7BF70;
+    color: #2B2B2B;
+}

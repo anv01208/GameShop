@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SportsPage</title>
+    <link rel="icon" type="image/x-icon" href="images/MainIcon.ico">
+    <link href="styles_for_cards.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="mainPage.html"><i class="fa fa-home" style="font-size:20px;color:white;margin-right:5px;"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="mainPage.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Adventure_category.html">Adventure</a></li>
+            <li><a class="dropdown-item" href="Action_category.html">Action</a></li>
+            <li><a class="dropdown-item" href="Sports_category.html">Sports</a></li>
+            <li><a class="dropdown-item" href="Horror_category.html">Horror</a></li>
+            <li><a class="dropdown-item" href="Strategy_category.html">Strategy</a></li>
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="All_games.html">All Games</a></li>
+          </ul>
+          <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="game.html">Play game</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="quiz.html">Quiz</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <button class="btn btn-outline-warning" type="button" style="margin-right:5px;margin-left:5px;" id="login">Login</button>
+      <button class="btn btn-outline-danger" type="button" id="registration" >Register</button>
+    </div>
+  </div>
+</nav>
+<div align="center" >
+  <div align="center" style="border: 2px solid orange;border-radius:10px; margin-top:5px; width:500px;">
+  <h3 style=" color:orange;">Sport Games</h3>
+    </div>
+</div>
+
+<div class="container mx-auto mt-4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+  <img src="images/NHL-23-Cover.jpg" class="card-img-top" alt="..." >
+  <div class="card-body">
+    <h5 class="card-title">NHL 23</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Sports</h6>
+    <p class="card-text">A curious one to kick off. Or should that be, er, puck off? Anyway, NHL 23 sneaks onto our list ahead of NBA 2K23 for one specific introduction of female player.huddled over a CRT TV all those years ago.</p>
+  <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                59.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+  </div>
+  </div>
+    </div>
+       <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="images/330px-Rocket_League_coverart.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Rocket League</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Sports</h6>
+    <p class="card-text">Some ideas are so beautifully simple, it’s impossible to fathom a world without them. Rocket League is one such example. Bursting onto the scene was tasked with the impossible: recreating a classic.162 Basketball popular teams</p>
+  <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                39.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+  </div>
+  </div>
+    </div>
+          <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="images/Out Of The Park Baseball 2023.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Out Of The Park Baseball 2023</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Sports</h6>
+    <p class="card-text">Football Manager being shown up by a rival dugout sim? Such a prospect has always been unthinkable, but this cult-favorite bat-swinger takes the ball and  get that rectified as soon as possible.</p>
+  <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                19.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+
+  </div>
+  </div>
+  </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+  <img src="images/Lonely_Mountains_cover_art.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Lonely Mountains Downhill</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Sports</h6>
+    <p class="card-text">The best sports game you’ve never played – get that rectified as soon as possible. Juxtaposing gruesome deaths with breathtaking scenery,you speed-run a cube-man biker your rose-tinted memories of chugging Red Bull.</p>
+  <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                59.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+
+  </div>
+  </div>
+    </div>
+       <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="images/ProSkaterPS1cover.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Tony Hawk’s Pro Skater 1 + 2</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Sports</h6>
+    <p class="card-text">Nostalgia has a nasty habit of playing tricks on you. Fire up the original Tony Hawk’s series on PlayStation and your rose-tinted memories of chugging Red Bull  and listening to Goldfinger on a loop.</p>
+  <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                69.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+
+  </div>
+  </div>
+    </div>
+          <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="images/Art_of_rally_Kenya_update_Steam_header.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Art of Rally</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Sports</h6>
+    <p class="card-text">It's a crying shame that Art of Rally didn't quite get the attention it deserved when it launched in September 2020, because it's one of the most stylistic, gorgeous racing games to date.This is an indie game that focuses on.</p>
+  <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                22.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+
+
+
+
+
+  </div>
+  </div>
+  </div>
+</div>
+  </div>
+
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+       <i class="fa-solid fa-chalkboard-user"></i> <h3>Chat with us</h3>
+
+        <label for="msg">Message</label>
+        <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
+
+        <button type="button" class="btn" onclick="closeForm()">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function addToCart(button){
+        if (button.innerHTML === 'Added') {
+          button.innerHTML = 'To Cart';
+          button.classList.remove('btn-success');
+          button.classList.add('btn-outline-success');
+    } else {
+          button.innerHTML = 'Added';
+          button.classList.remove('btn-outline-success');
+          button.classList.add('btn-success');
+    }
+  }
+    </script>
+<script src="https://kit.fontawesome.com/d8bd919f93.js" crossorigin="anonymous"></script>
+
+  <footer class="bg-dark text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><i class="fa fa-users" style="margin-right:5px;"></i>Social Media</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"><i class="fa fa-github" style="margin-right:3px"></i>Github</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fa fa-vk" style="margin-right:3px;"></i>Vk</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fa fa-instagram" style="margin-right:3px;"></i>Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><i class="fa fa-file" style="margin-right:3px"></i>Rules and Help</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Returns</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Regulations</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Privacy policy</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><i class="fa fa-address-card" style="margin-right:2px;"></i>Address</h5>
+
+          <ul class="list-unstyled" style="margin-left:25px;">
+            <li>
+              <a href="#!" class="text-white">The GameStore</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">123 Street</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">05765 NY</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><i class="fa fa-handshake-o" aria-hidden="true" style="margin-right:5px;"></i>Write to us</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Help in purchasing</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Check the order status</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Join the newsletter</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2021 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<script type="text/javascript">
+    document.getElementById("registration").onclick = function () {
+        location.href = "registration.html";
+    };
+    document.getElementById("login").onclick = function () {
+        location.href = "login.html";
+    };
+</script>
+
+</html>

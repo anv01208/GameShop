@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles_for_game.css" type="text/css">
+    <title>Tic Tac Toe</title>
+
+</head>
+<a href="mainPage.html"><button id="home-button">Home</button></a>
+<body>
+    <h1 id="main-header" align="center">Tic Tac Toe</h1>
+    <table id="field" align="center">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <div align="center">
+        <button id="start-button" onclick="startGame()">Start Game</button>
+    </div>
+    <table id="score">
+        <tr>
+            <td id="x">X wins : 0</td>
+        </tr>
+        <tr>
+            <td id="o">O wins : 0 </td>
+        </tr>
+        <tr>
+            <td id="draw">Draw : 0</td>
+        </tr>
+    </table>
+    <script src="script_for_game.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdventurePage</title>
+    <link rel="icon" type="image/x-icon" href="images/MainIcon.ico">
+    <link href="styles_for_cards.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="mainPage.html"><i class="fa fa-home" style="font-size:20px;color:white;margin-right:5px;"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="mainPage.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Adventure_category.html">Adventure</a></li>
+            <li><a class="dropdown-item" href="Action_category.html">Action</a></li>
+            <li><a class="dropdown-item" href="Free_to_play_category.html">Sports</a></li>
+            <li><a class="dropdown-item" href="Horror_category.html">Horror</a></li>
+            <li><a class="dropdown-item" href="Strategy_category.html">Strategy</a></li>
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="All_games.html">All Games</a></li>
+          </ul>
+          <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="game.html">Play game</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="quiz.html">Quiz</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <button class="btn btn-outline-warning" type="button" style="margin-right:5px;margin-left:5px;" id="login">Login</button>
+      <button class="btn btn-outline-danger" type="button" id="registration" >Register</button>
+    </div>
+  </div>
+</nav>
+
+  <div align="center" >
+  <div align="center" style="border: 2px solid orange;border-radius:10px; margin-top:5px; width:500px;">
+  <h3 style=" color:orange;">Adventure Games</h3>
+    </div>
+</div>
+
+<div class="container mx-auto mt-4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+  <img src="images/fallout4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Fallout 4</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Adventure</h6>
+    <p class="card-text">The story of Fallout 4 focuses on a spouse, the Sole Survivor of Vault 111, as they search for their missing child, Shaun. Fallout 4 is set in and around the Boston area in 2287, 10 years after Fallout 3.</p>
+        <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                12.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+  </div>
+  </div>
+    </div>
+       <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="images/a-way-out.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">A Way Out</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Adventure</h6>
+    <p class="card-text">Opening in a prison in the 1970s, A Way Out urges a player and their partner to work together effectively to plot their escape from incarceration. It’s an inventive set-up, in which player.</p>
+        <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                49.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+  </div>
+  </div>
+    </div>
+          <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="images/Far_Cry_4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Far Cry 4</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Adventure</h6>
+    <p class="card-text">The Far Cry series has always excelled at creating eccentric, deeply unhinged villains and this fourth offering is no exception. In fact, Far Cry 4 may contain the greatest antagonist these games have ever.</p>
+  <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                49.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+
+  </div>
+  </div>
+  </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+  <img src="images/The_Wolf_Among_Us.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">The Wolf Among Us</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Adventure</h6>
+    <p class="card-text">This 2014 cult hit from Telltale took classic fairytale characters, reimagined them in a hidden town in 1980s New York and then dropped them all into the mix of a murder investigation that the player leads.</p>
+    <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                32.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+
+  </div>
+  </div>
+    </div>
+       <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="images/Star_Wars_Jedi_-_Survivor.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Star Wars Jedi: Survivor</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Adventure</h6>
+    <p class="card-text"> Star Wars Jedi: Survivor is one of the best Star Wars games for good reason. Cal is back, the young Jedi at odds with the Galactic Empire, and this time he's brought friends.With five different lightsaber murder investigation that. </p>
+    <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                10.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+
+  </div>
+  </div>
+    </div>
+          <div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="images/Stray.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Stray</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Adventure</h6>
+    <p class="card-text">Stray takes you on one pawsome adventure as a little cat who, after getting lost, must find their way through a neon-tinted cybercity inhabited by robots. Along the way, you'll meet a little robot called B12 different lightsaber.</p>
+  <p class="fs-3 fw-semibold" style="margin: 0px; font-family: sans-serif;">
+                                49.99 $</p>
+    <button type="button" class="btn btn-outline-success" onclick="addToCart(this)">To Cart</button>
+
+
+
+
+
+  </div>
+  </div>
+  </div>
+</div>
+  </div>
+
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+       <i class="fa-solid fa-chalkboard-user"></i> <h3>Chat with us</h3>
+
+        <label for="msg">Message</label>
+        <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
+
+        <button type="button" class="btn" onclick="closeForm()">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function addToCart(button){
+        if (button.innerHTML === 'Added') {
+          button.innerHTML = 'To Cart';
+          button.classList.remove('btn-success');
+          button.classList.add('btn-outline-success');
+    } else {
+          button.innerHTML = 'Added';
+          button.classList.remove('btn-outline-success');
+          button.classList.add('btn-success');
+    }
+  }
+    </script>
+<script src="https://kit.fontawesome.com/d8bd919f93.js" crossorigin="anonymous"></script>
+
+  <footer class="bg-dark text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><i class="fa fa-users" style="margin-right:5px;"></i>Social Media</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"><i class="fa fa-github" style="margin-right:3px"></i>Github</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fa fa-vk" style="margin-right:3px;"></i>Vk</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"><i class="fa fa-instagram" style="margin-right:3px;"></i>Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><i class="fa fa-file" style="margin-right:3px"></i>Rules and Help</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Returns</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Regulations</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Privacy policy</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><i class="fa fa-address-card" style="margin-right:2px;"></i>Address</h5>
+
+          <ul class="list-unstyled" style="margin-left:25px;">
+            <li>
+              <a href="#!" class="text-white">The GameStore</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">123 Street</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">05765 NY</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><i class="fa fa-handshake-o" aria-hidden="true" style="margin-right:5px;"></i>Write to us</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Help in purchasing</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Check the order status</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Join the newsletter</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2021 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<script type="text/javascript">
+    document.getElementById("registration").onclick = function () {
+        location.href = "registration.html";
+    };
+    document.getElementById("login").onclick = function () {
+        location.href = "login.html";
+    };
+</script>
+
+</html>
