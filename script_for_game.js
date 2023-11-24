@@ -1,6 +1,12 @@
 var counter = 0
+var x_counter = 0
+var o_counter = 0
+var draw_counter = 0
 var cells = document.querySelectorAll('#field td')
 var header = document.getElementById('main-header')
+var x_wins = document.getElementById('x')
+var o_wins = document.getElementById('o')
+var draw = document.getElementById('draw')
 
 function isEnder() {
     if (counter < 4) {
@@ -31,6 +37,7 @@ function isEnder() {
         return true
     }
     if (counter > 7) {
+        draw +=1
         header.innerHTML = 'Draw!'
         return false
     }
@@ -40,10 +47,10 @@ function cellClick() {
     var img = document.createElement('img')
     img.style.width = '75%';
     if (counter % 2 == 0) {
-        img.src = 'images/close.png'
+        img.src = 'close.png'
     }
     else {
-        img.src = 'images/circle.png'
+        img.src = 'circle.png'
     }
     this.appendChild(img)
     if (isEnder()) {
@@ -51,9 +58,11 @@ function cellClick() {
             cell.removeEventListener('click', cellClick)
         }
         if (counter % 2 == 0) {
+            x_counter += 1
             header.innerHTML = 'X is winner!'
         }
         else {
+            o_counter +=1
             header.innerHTML = 'O is winner!'
         }
     }
@@ -64,6 +73,9 @@ function cellClick() {
 function startGame() {
     counter = 0
     header.innerHTML = 'Tic Tac Toe'
+    x_wins.innerHTML = 'X wins : ' + x_counter
+    o_wins.innerHTML = 'O wins : ' + o_counter
+    draw.innerHTML = 'Draw : ' + draw_counter
     for (var cell of cells) {
         cell.innerHTML = ''
         cell.addEventListener('click', cellClick)
