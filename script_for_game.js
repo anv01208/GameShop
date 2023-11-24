@@ -66,7 +66,7 @@ function cellClick() {
             header.innerHTML = 'O is winner!'
         }
     }
-    counter += 1
+    draw_counter += 1
     this.removeEventListener('click', cellClick)
 }
 
