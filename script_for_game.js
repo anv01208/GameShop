@@ -47,10 +47,10 @@ function cellClick() {
     var img = document.createElement('img')
     img.style.width = '75%';
     if (counter % 2 == 0) {
-        img.src = 'close.png'
+        img.src = 'images/close.png'
     }
     else {
-        img.src = 'circle.png'
+        img.src = 'images/circle.png'
     }
     this.appendChild(img)
     if (isEnder()) {
